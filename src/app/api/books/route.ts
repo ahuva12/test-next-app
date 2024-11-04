@@ -1,10 +1,8 @@
-import { Gbooks } from "./db";
+import { NextResponse } from 'next/server';
+import { Gbooks } from './db';
 
-export async function GET(request: Request): Promise<Response>{
-    return new Response(JSON.stringify(Gbooks), {
+export async function GET(request: Request) {
+    return NextResponse.json(Gbooks, {
         status: 200,
-        headers: {
-            'Content-Type': 'application/json',
-        },
     });
 }
