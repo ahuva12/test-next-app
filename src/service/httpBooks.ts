@@ -4,6 +4,6 @@ export const http = axios.create({
     baseURL: "http://localhost:3000/api/books",
     headers: {
         "Content-type": "application/json",
-        "access-controlallow-origin": "*"
+        "Access-Control-Allow-Origin": "*"
     }
 });
